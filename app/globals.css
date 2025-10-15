@@ -1,0 +1,800 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+body {
+  color: #2d3748;
+  background: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  background: #EEFCFE;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Hero content styles - no longer needed with image header */
+
+/* Section Containers */
+.section {
+  padding: 40px 20px;
+}
+
+.section > * {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.section-white {
+  background: #fff;
+}
+
+.section-light {
+  background: #f9fafb;
+}
+
+.section-blue {
+  background: #EEFCFE;
+  width: 100%;
+}
+
+/* What is Manulife Vitality */
+.vitality-intro {
+  text-align: left;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.vitality-intro h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 24px;
+  line-height: 1.3;
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.vitality-intro h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #d81671;
+}
+
+.vitality-intro p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #4a5568;
+}
+
+/* Benefits Section */
+.benefits-section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.benefits-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.benefits-content {
+  flex: 1;
+}
+
+.benefits-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  position: relative;
+  display: inline-block;
+}
+
+.benefits-content h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #d81671;
+}
+
+.benefits-content .subtitle {
+  font-size: 19px;
+  color: #718096;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.benefits-list {
+  list-style: none;
+}
+
+.benefits-list li {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 12px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.benefits-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #00825a;
+  font-weight: bold;
+}
+
+/* Testimonials */
+.testimonials-section {
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 48px;
+  line-height: 1.3;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.testimonials-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #d81671;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #4a5568;
+  margin-bottom: 12px;
+}
+
+.testimonial-author {
+  font-size: 15px;
+  color: #718096;
+  font-weight: 600;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 18px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: #e91e63;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+  border: 2px solid #e91e63;
+}
+
+.btn-primary:hover {
+  background: #d81b60;
+  border-color: #d81b60;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #2d3748;
+  border: 2px solid #2d3748;
+}
+
+.btn-outline:hover {
+  background: #0086ae;
+  border-color: #0086ae;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 134, 174, 0.3);
+}
+
+/* Checklist Section */
+.checklist-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 32px;
+  line-height: 1.3;
+  position: relative;
+  display: inline-block;
+}
+
+.checklist-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #d81671;
+}
+
+.checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 17px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.checklist-icon {
+  color: #00825a;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Rewards Section */
+.rewards-section {
+  background: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reward-card {
+  background: #f9fafb;
+  padding: 30px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.reward-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.reward-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.reward-points {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e91e63;
+}
+
+/* Insurance Answers Section */
+.insurance-answers {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.insurance-image {
+  flex: 1;
+}
+
+.insurance-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.insurance-content {
+  flex: 1;
+}
+
+.insurance-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 24px;
+  line-height: 1.3;
+  position: relative;
+  display: inline-block;
+}
+
+.insurance-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #d81671;
+}
+
+/* Remove underline from specific headings */
+.insurance-content h2.no-underline::after {
+  display: none;
+}
+
+/* Health Coverage Grid */
+.coverage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.coverage-item {
+  font-size: 17px;
+  color: #4a5568;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.6;
+}
+
+.coverage-item:before {
+  content: "•";
+  color: #00825a;
+  font-weight: bold;
+}
+
+/* Workout Cards */
+.workout-section {
+  background: #EEFCFE;
+  padding: 40px 20px;
+}
+
+.workout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.workout-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.workout-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.workout-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.workout-points {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e91e63;
+}
+
+/* Partner Logos */
+.partners-section {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.partners-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 48px;
+  line-height: 1.3;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.partners-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #d81671;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.partner-card {
+  background: #f9fafb;
+  padding: 40px 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+}
+
+.partner-logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.partner-benefit {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: #1f2937;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  line-height: 1.3;
+  position: relative;
+  display: inline-block;
+}
+
+.footer h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #d81671;
+}
+
+/* FAQ Section */
+.faq-section {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.faq-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #d81671;
+}
+
+.faq-subtitle {
+  color: #718096;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+.faq-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 24px 30px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  font-size: 17px;
+  color: #4a5568;
+  margin-top: 12px;
+  line-height: 1.5;
+  display: none;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Utility Classes for Underlined Headings */
+.underlined-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.underlined-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: #d81671;
+}
+
+.centered-underlined-heading {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.centered-underlined-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #d81671;
+}
+
+/* FAQ Layout */
+.faq-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.faq-header {
+  position: sticky;
+  top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .faq-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Reduce gaps between sections */
+  .section {
+    padding: 20px 20px;
+  }
+
+  /* Increase image sizes by 10% */
+  .hero-section img,
+  .benefits-section img,
+  .insurance-answers img {
+    transform: scale(1.1);
+  }
+
+  /* Reduce points font size by 50% for mobile */
+  .points-text {
+    font-size: 13.5px !important;
+  }
+
+  /* Change status levels to vertical layout on mobile */
+  .status-levels-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  /* Hide Frequency column on mobile for points table */
+  .points-table th:nth-child(3),
+  .points-table td:nth-child(3) {
+    display: none;
+  }
+
+  /* Add left and right margins to text elements on mobile */
+  .section p,
+  .section h2,
+  .section h3,
+  .vitality-intro p,
+  .benefits-content p,
+  .benefits-content h3,
+  .testimonials-section h2,
+  .rewards-section h2,
+  .insurance-content h2,
+  .insurance-content p,
+  .faq-section h2,
+  .faq-subtitle {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+
+  .benefits-section,
+  .insurance-answers {
+    flex-direction: column;
+  }
+
+  .coverage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid,
+  .workout-grid,
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FAQ responsive layout */
+  .faq-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .faq-header {
+    position: static;
+  }
+
+  .faq-header h2 {
+    font-size: 36px !important;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+  }
+}
+
