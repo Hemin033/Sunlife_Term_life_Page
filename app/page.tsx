@@ -1847,7 +1847,7 @@ export default function Home() {
               borderTop: '1px solid #e5e7eb',
               paddingTop: '16px'
             }}>
-              © 2024 Policy Advisor. All rights reserved.
+              © 2025 Policy Advisor. All rights reserved.
             </p>
           </div>
       </footer>
