@@ -651,7 +651,7 @@ export default function Home() {
               lineHeight: 1.5,
               marginBottom: '24px'
             }}>
-              A Sun Life licensed advisor will get in touch with you shortly.
+              One of our licensed advisors will reach out soon with your Sun Life term life insurance options and guide you on what's best for your needs.
             </p>
             <button
               onClick={() => setShowThankYou(false)}
@@ -675,95 +675,66 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-container" style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto' }}>
+        <div className="hero-container" style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto', paddingTop: '20px' }}>
             <div style={{
               position: 'absolute',
-              top: '-8%',
+              top: '70%',
               left: '0',
+              transform: 'translateY(-50%)',
               zIndex: '10',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-start',
-              gap: '0px'
+              paddingLeft: '20px'
             }}>
-              <Image
-                src="/Sun-Life-Financial-Logo.png"
-                alt="Sun Life Financial Logo"
-                width={520}
-                height={156}
-                style={{
-                  width: 'auto',
-                  height: '156px',
-                  filter: 'drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.8))'
-                }}
-              />
               <h1 style={{
                 color: '#013946',
-                fontSize: '58px',
+                fontSize: '59px',
                 fontWeight: '700',
                 textAlign: 'left',
                 maxWidth: '600px',
                 textShadow: '2px 2px 4px rgba(255, 255, 255, 0.8)',
-                lineHeight: '1.1',
+                lineHeight: '1.2',
                 letterSpacing: '-0.5px',
-                margin: '0',
-                marginTop: '-30px'
+                margin: '0 0 20px 0'
               }}>
                 Plan today,<br />
                 Protect tomorrow<br />
                 with Sun Life
               </h1>
+              <button
+                onClick={() => setShowLeadForm(true)}
+                className="btn btn-primary"
+                style={{
+                  minWidth: '180px',
+                  fontSize: '18px',
+                  fontWeight: 600,
+                  padding: '14px 28px',
+                  border: 'none',
+                  cursor: 'pointer',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  borderRadius: '4px',
+                  transition: 'all 0.3s ease',
+                  textTransform: 'uppercase',
+                  backgroundColor: '#FFB800',
+                  color: '#1A1A1A',
+                  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
+                }}
+              >
+                GET QUOTE
+              </button>
             </div>
             <Image
-              src="/HEader-4.png"
+              src="/HEader-5.png"
               alt="Sun Life Insurance - Protect Your Family's Future"
-              width={1920}
-              height={677}
+              width={1000}
+              height={200}
               priority
               style={{
                 width: '100%',
                 height: 'auto',
-                maxWidth: '1920px',
-                margin: '0 auto',
-                display: 'block',
-                marginTop: '20px'
+                display: 'block'
               }}
             />
-          {/* Hero CTAs - Positioned below text */}
-          <div style={{
-            position: 'absolute',
-            top: '90%',
-            left: '0',
-            display: 'flex',
-            justifyContent: 'flex-start',
-            alignItems: 'center',
-            padding: '0',
-            flexWrap: 'wrap'
-          }}>
-            <button 
-              onClick={() => setShowLeadForm(true)}
-              className="btn btn-primary"
-              style={{
-                minWidth: '200px',
-                fontSize: '20px',
-                fontWeight: 600,
-                padding: '16px 32px',
-                border: 'none',
-                cursor: 'pointer',
-                display: 'inline-flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                borderRadius: '4px',
-                transition: 'all 0.3s ease',
-                textTransform: 'uppercase',
-                backgroundColor: '#FFB800',
-                color: '#1A1A1A',
-                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
-              }}
-            >
-              GET QUOTE
-            </button>
-          </div>
         </div>
       </section>
 
