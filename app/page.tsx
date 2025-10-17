@@ -870,7 +870,7 @@ export default function Home() {
       <section className="section section-white" style={{ padding: '80px 20px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 className="centered-underlined-heading" style={{ marginBottom: '40px', fontSize: '32px', fontWeight: 700, color: '#2d3748', lineHeight: 1.3, textAlign: 'center' }}>
-            SunLife term life insurance products
+            Sun Life term life insurance products
           </h2>
           
           <div style={{
