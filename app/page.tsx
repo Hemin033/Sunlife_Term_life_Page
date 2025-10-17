@@ -175,7 +175,7 @@ export default function Home() {
                   style={{
                     width: '100%',
                     padding: '14px 16px',
-                    fontSize: '16px',
+                    fontSize: '15px',
                     border: '1px solid #d1d5db',
                     borderRadius: '8px',
                     outline: 'none'
@@ -197,7 +197,7 @@ export default function Home() {
                   style={{
                     width: '100%',
                     padding: '14px 16px',
-                    fontSize: '16px',
+                    fontSize: '15px',
                     border: '1px solid #d1d5db',
                     borderRadius: '8px',
                     outline: 'none'
@@ -219,7 +219,7 @@ export default function Home() {
                   style={{
                     width: '100%',
                     padding: '14px 16px',
-                    fontSize: '16px',
+                    fontSize: '15px',
                     border: '1px solid #d1d5db',
                     borderRadius: '8px',
                     outline: 'none'
@@ -239,7 +239,7 @@ export default function Home() {
                     style={{
                       flex: 1,
                       padding: '14px',
-                      fontSize: '16px',
+                      fontSize: '15px',
                       border: `2px solid ${formData.gender === 'Man' ? '#0086ae' : '#d1d5db'}`,
                       borderRadius: '8px',
                       backgroundColor: formData.gender === 'Man' ? '#e0f2fe' : '#fff',
@@ -256,7 +256,7 @@ export default function Home() {
                     style={{
                       flex: 1,
                       padding: '14px',
-                      fontSize: '16px',
+                      fontSize: '15px',
                       border: `2px solid ${formData.gender === 'Woman' ? '#0086ae' : '#d1d5db'}`,
                       borderRadius: '8px',
                       backgroundColor: formData.gender === 'Woman' ? '#e0f2fe' : '#fff',
@@ -301,7 +301,7 @@ export default function Home() {
                   style={{
                     width: '100%',
                     padding: '14px 16px',
-                    fontSize: '16px',
+                    fontSize: '15px',
                     border: '1px solid #d1d5db',
                     borderRadius: '8px',
                     outline: 'none'
@@ -326,7 +326,7 @@ export default function Home() {
                     style={{
                       flex: 1,
                       padding: '14px',
-                      fontSize: '16px',
+                      fontSize: '15px',
                       border: `2px solid ${formData.smokerStatus === 'Non-smoker' ? '#0086ae' : '#d1d5db'}`,
                       borderRadius: '8px',
                       backgroundColor: formData.smokerStatus === 'Non-smoker' ? '#e0f2fe' : '#fff',
@@ -343,7 +343,7 @@ export default function Home() {
                     style={{
                       flex: 1,
                       padding: '14px',
-                      fontSize: '16px',
+                      fontSize: '15px',
                       border: `2px solid ${formData.smokerStatus === 'Smoker' ? '#0086ae' : '#d1d5db'}`,
                       borderRadius: '8px',
                       backgroundColor: formData.smokerStatus === 'Smoker' ? '#e0f2fe' : '#fff',
@@ -368,7 +368,7 @@ export default function Home() {
                   style={{
                     width: '100%',
                     padding: '14px 16px',
-                    fontSize: '16px',
+                    fontSize: '15px',
                     border: '1px solid #d1d5db',
                     borderRadius: '8px',
                     outline: 'none',
@@ -408,7 +408,7 @@ export default function Home() {
                   style={{
                     width: '100%',
                     padding: '14px 16px',
-                    fontSize: '16px',
+                    fontSize: '15px',
                     border: '1px solid #d1d5db',
                     borderRadius: '8px',
                     outline: 'none'
@@ -429,7 +429,7 @@ export default function Home() {
                   style={{
                     width: '100%',
                     padding: '14px 16px',
-                    fontSize: '16px',
+                    fontSize: '15px',
                     border: '1px solid #d1d5db',
                     borderRadius: '8px',
                     outline: 'none'
@@ -457,6 +457,34 @@ export default function Home() {
               >
                 Submit Request
               </button>
+
+              {/* Form Disclaimer */}
+              <div style={{
+                backgroundColor: '#f9fafb',
+                border: '1px solid #e5e7eb',
+                borderRadius: '8px',
+                padding: '16px',
+                marginTop: '24px'
+              }}>
+                <p style={{
+                  fontSize: '13px',
+                  color: '#4b5563',
+                  margin: '0 0 8px 0',
+                  fontWeight: '500',
+                  textAlign: 'center'
+                }}>
+                  By submitting this form, you agree to be contacted by a licensed advisor to discuss your Sun Life term life insurance options.
+                </p>
+                <p style={{
+                  fontSize: '12px',
+                  color: '#6b7280',
+                  margin: '0',
+                  fontStyle: 'italic',
+                  textAlign: 'center'
+                }}>
+                  Your information is secure, confidential and used only to assist with your insurance inquiry.
+                </p>
+              </div>
             </form>
           </div>
         </div>
@@ -1157,61 +1185,89 @@ export default function Home() {
       {/* Cost of Term Insurance */}
       <section className="section section-white">
           <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 className="centered-underlined-heading" style={{ fontSize: '32px', fontWeight: 700, color: '#2d3748', marginBottom: '30px', textAlign: 'center', lineHeight: 1.3 }}>
-            Cost of term insurance in Canada
-          </h2>
-          
-          <p style={{ 
-            fontSize: '18px', 
-            color: '#4a5568', 
-            lineHeight: 1.6, 
-            marginBottom: '30px',
-            textAlign: 'left',
+            <div style={{
+            display: 'grid',
+            gridTemplateColumns: '45% 50%',
+            gap: '60px',
             maxWidth: '1200px',
-            margin: '0 auto 30px'
-          }}>
-            The cost of term life insurance depends on your age, gender, coverage amount, term length, and health. For a non-smoking 35-year-old in good health, a $500,000 policy with a 20-year term from Sun Life typically costs about $35/month for men and $29/month for women. Rates increase with age, and policies can start as low as $20/month for younger applicants. Always compare quotes and customize your coverage for the best value.
-          </p>
-
-          <div style={{
-            maxWidth: '1000px',
             margin: '0 auto'
           }}>
-            <table style={{
+            <div>
+              <h2 style={{ 
+                fontSize: '32px', 
+                fontWeight: 700, 
+                color: '#2d3748', 
+                marginBottom: '24px', 
+                textAlign: 'left', 
+                lineHeight: 1.3,
+                position: 'relative',
+                paddingBottom: '16px'
+              }}>
+                Cost of term insurance in Canada
+                <span style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: 0,
+                  width: '60px',
+                  height: '4px',
+                  background: '#013946'
+                }}></span>
+              </h2>
+              <p style={{ 
+                fontSize: '17px', 
+                color: '#4a5568', 
+                lineHeight: 1.5,
+                marginTop: '0',
+                marginBottom: '0'
+              }}>
+                Your life insurance premium depends on factors like age, gender, coverage amount, term length, and overall health — but term life coverage is often more affordable than you might think.
+                <br />
+                Sun Life makes it easy and accessible to protect your family's financial future with flexible, budget-friendly options.
+                <br />
+                Here are some sample rates — your exact cost will vary based on your coverage and term.
+                <br />
+                A licensed Sun Life advisor can help you find the right plan for your needs and budget — at no cost.
+              </p>
+            </div>
+
+            <div style={{
+              flex: '0 0 50%'
+            }}>
+              <table style={{
               width: '100%', 
               borderCollapse: 'collapse',
               backgroundColor: '#fff',
-              borderRadius: '8px',
+              borderRadius: '6px',
               overflow: 'hidden',
-              boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)'
+              boxShadow: '0 1px 2px rgba(0, 0, 0, 0.05)'
             }}>
               <thead>
                 <tr style={{ backgroundColor: '#FFF8E0' }}>
                   <th style={{ 
-                    padding: '16px', 
+                    padding: '12px', 
                     textAlign: 'left', 
                     fontWeight: 700, 
-                    fontSize: '16px', 
+                    fontSize: '15px', 
                     color: '#1f2937',
                     borderBottom: '1px solid #e5e7eb'
                   }}>
                     Age range
                   </th>
                   <th style={{ 
-                    padding: '16px', 
+                    padding: '12px', 
                     textAlign: 'left', 
                     fontWeight: 700, 
-                    fontSize: '16px', 
+                    fontSize: '15px', 
                     color: '#1f2937',
                     borderBottom: '1px solid #e5e7eb'
                   }}>
                     Premiums (female)
                   </th>
                   <th style={{ 
-                    padding: '16px', 
+                    padding: '12px', 
                     textAlign: 'left', 
                     fontWeight: 700, 
-                    fontSize: '16px', 
+                    fontSize: '15px', 
                     color: '#1f2937',
                     borderBottom: '1px solid #e5e7eb'
                   }}>
@@ -1247,6 +1303,7 @@ export default function Home() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </div>
       </section>
@@ -1325,11 +1382,12 @@ export default function Home() {
 
           {/* Features Grid */}
           <div style={{ 
-            display: 'grid', 
+            display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '26px',
             marginTop: '20px',
-            gridTemplateRows: 'auto auto auto'
+            maxWidth: '1200px',
+            margin: '0 auto'
           }}>
             {/* Level Premiums */}
             <div style={{
@@ -1581,8 +1639,7 @@ export default function Home() {
               alignItems: 'flex-start',
               gap: '16px',
               boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)',
-              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-              gridColumn: '1 / 2'
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-2px)'
@@ -1612,8 +1669,48 @@ export default function Home() {
           </div>
         </div>
 
+            {/* Renewable Coverage */}
+            <div style={{
+              backgroundColor: '#fff',
+              border: '1px solid #e5e7eb',
+              borderRadius: '12px',
+              padding: '24px',
+              display: 'flex',
+              alignItems: 'flex-start',
+              gap: '16px',
+              boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-2px)'
+              e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+              e.currentTarget.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.05)'
+            }}>
+             <div style={{
+                 display: 'flex',
+                 alignItems: 'center',
+                 justifyContent: 'center',
+                 fontSize: '24px',
+                 color: '#013946',
+                 flexShrink: 0
+               }}>
+                 <BsGraphUp />
+               </div>
+              <div>
+                <h3 style={{ fontSize: '18px', fontWeight: 600, color: '#1f2937', marginBottom: '4px', marginTop: 0 }}>
+                  Renewable Coverage
+                </h3>
+                <p style={{ fontSize: '15px', color: '#4a5568', lineHeight: 1.5, margin: 0 }}>
+                  Easily extend your protection at the end of your term, no new medical exam required.
+                </p>
+              </div>
+            </div>
+
             {/* Wellness Resources */}
-        <div style={{ 
+            <div style={{ 
               backgroundColor: '#fff',
               border: '1px solid #e5e7eb',
           borderRadius: '12px',
@@ -1622,8 +1719,7 @@ export default function Home() {
               alignItems: 'flex-start',
               gap: '16px',
               boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)',
-              transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-              gridColumn: '2 / 3'
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-2px)'
@@ -1664,7 +1760,7 @@ export default function Home() {
         <div className="faq-list">
           <div className={`faq-item ${activeFAQ === 0 ? 'active' : ''}`} onClick={() => toggleFAQ(0)}>
             <div className="faq-question">
-                  <span>What is Term Life Insurance?</span>
+                  <span>What is term life insurance?</span>
               <span>{activeFAQ === 0 ? '−' : '+'}</span>
             </div>
             {activeFAQ === 0 && (
@@ -1723,6 +1819,38 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Footer Disclaimer */}
+      <footer style={{
+        backgroundColor: '#f9fafb',
+        borderTop: '1px solid #e5e7eb',
+        padding: '40px 20px',
+        marginTop: '80px'
+      }}>
+        <div style={{
+          width: '100%',
+          padding: '0 40px'
+        }}>
+            <p style={{
+              fontSize: '11px',
+              color: '#6b7280',
+              lineHeight: '1.8',
+              margin: '0 0 16px 0',
+              textAlign: 'center'
+            }}>
+              Disclaimer: This website is operated by Policy Advisor, an independent insurance broker. We are not directly affiliated with or endorsed by Sun Life Financial. All product names, logos, and brands are property of their respective owners. The information provided on this site is for general informational purposes only and should not be considered as professional insurance advice. Insurance products and their features may vary based on your location and individual circumstances. For specific details about Sun Life insurance products, please consult with a licensed Sun Life advisor.
+            </p>
+            <p style={{
+              fontSize: '11px',
+              color: '#6b7280',
+              margin: '0',
+              textAlign: 'center',
+              borderTop: '1px solid #e5e7eb',
+              paddingTop: '16px'
+            }}>
+              © 2024 Policy Advisor. All rights reserved.
+            </p>
+          </div>
+      </footer>
     </main>
   )
 }
