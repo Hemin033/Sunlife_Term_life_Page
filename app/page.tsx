@@ -648,42 +648,63 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-container" style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto' }}>
-            <h1 style={{
+            <div style={{
               position: 'absolute',
-              top: '15%',
+              top: '-8%',
               left: '0',
-              color: '#013946',
-              fontSize: '58px',
-              fontWeight: '700',
-              textAlign: 'left',
-              maxWidth: '600px',
               zIndex: '10',
-              textShadow: '2px 2px 4px rgba(255, 255, 255, 0.8)',
-              lineHeight: '1.1',
-              letterSpacing: '-0.5px'
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
+              gap: '0px'
             }}>
-              Plan today,<br />
-              Protect tomorrow<br />
-              with Sun Life
-            </h1>
+              <Image
+                src="/Sun-Life-Financial-Logo.png"
+                alt="Sun Life Financial Logo"
+                width={520}
+                height={156}
+                style={{
+                  width: 'auto',
+                  height: '156px',
+                  filter: 'drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.8))'
+                }}
+              />
+              <h1 style={{
+                color: '#013946',
+                fontSize: '58px',
+                fontWeight: '700',
+                textAlign: 'left',
+                maxWidth: '600px',
+                textShadow: '2px 2px 4px rgba(255, 255, 255, 0.8)',
+                lineHeight: '1.1',
+                letterSpacing: '-0.5px',
+                margin: '0',
+                marginTop: '-30px'
+              }}>
+                Plan today,<br />
+                Protect tomorrow<br />
+                with Sun Life
+              </h1>
+            </div>
             <Image
               src="/HEader-4.png"
               alt="Sun Life Insurance - Protect Your Family's Future"
               width={1920}
-              height={580}
+              height={677}
               priority
               style={{
                 width: '100%',
                 height: 'auto',
                 maxWidth: '1920px',
                 margin: '0 auto',
-                display: 'block'
+                display: 'block',
+                marginTop: '20px'
               }}
             />
-          {/* Hero CTAs - Positioned below Manulife Vitality logo */}
+          {/* Hero CTAs - Positioned below text */}
           <div style={{
             position: 'absolute',
-            top: '75%',
+            top: '90%',
             left: '0',
             display: 'flex',
             justifyContent: 'flex-start',
@@ -723,7 +744,7 @@ export default function Home() {
         <div className="vitality-intro">
           <h2>Protect what matters most with Sun Life</h2>
           <p>
-            Secure your family's future with trusted coverage. Sun Life offers flexible life insurance options designed to safeguard your loved ones, pay off debts, and preserve your legacy — all with trusted coverage from one of Canada's most established insurers.
+            Secure your family's future with reliable coverage. Sun Life offers flexible life insurance options designed to safeguard your loved ones, pay off debts, and preserve your legacy — all with reliable coverage from one of Canada's most established insurers.
             <br /><br />
             Whether you're looking for affordable term coverage or lifetime protection that builds value, Sun Life makes it easy to find the right plan for your needs and budget.
           </p>
@@ -781,7 +802,7 @@ export default function Home() {
           <div style={{
           backgroundColor: '#FFF8E0',
           borderRadius: '16px',
-          padding: '36px 40px',
+          padding: '24px 30px',
           display: 'flex',
           alignItems: 'center',
           gap: '60px',
@@ -849,7 +870,7 @@ export default function Home() {
       <section className="section section-white" style={{ padding: '80px 20px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 className="centered-underlined-heading" style={{ marginBottom: '40px', fontSize: '32px', fontWeight: 700, color: '#2d3748', lineHeight: 1.3, textAlign: 'center' }}>
-            Term life insurance products
+            SunLife term life insurance products
           </h2>
           
           <div style={{
